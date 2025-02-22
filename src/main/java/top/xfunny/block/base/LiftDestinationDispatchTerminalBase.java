@@ -38,7 +38,7 @@ public abstract class LiftDestinationDispatchTerminalBase extends BlockExtension
     private final boolean isOdd;
 
     public LiftDestinationDispatchTerminalBase(boolean isOdd) {
-        super(BlockHelper.createBlockSettings(true));
+        super(BlockHelper.createBlockSettings(true,false));
         this.isOdd = isOdd;
     }
 

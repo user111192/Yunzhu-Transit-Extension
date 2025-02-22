@@ -18,7 +18,7 @@ public abstract class LiftPanelBase extends BlockExtension implements DirectionH
     private final boolean isOdd;
 
     public LiftPanelBase(Boolean isOdd) {
-        super(BlockHelper.createBlockSettings(true));
+        super(BlockHelper.createBlockSettings(true,false));
         this.isOdd = isOdd;
     }
 

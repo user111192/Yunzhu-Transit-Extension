@@ -33,14 +33,14 @@ public abstract class LiftButtonsBase extends BlockExtension implements Directio
 
 
     public LiftButtonsBase(boolean allowPress, boolean isOdd) {
-        super(BlockHelper.createBlockSettings(true));
+        super(BlockHelper.createBlockSettings(true,false));
         this.isOdd = isOdd;
         this.allowPress = allowPress;
         Init.LOGGER.info("LiftButtonsBase init");
     }
 
     public LiftButtonsBase(boolean allowPress, boolean isOdd, double median) {
-        super(BlockHelper.createBlockSettings(true));
+        super(BlockHelper.createBlockSettings(true,false));
         this.isOdd = isOdd;
         this.allowPress = allowPress;
         this.median = median;

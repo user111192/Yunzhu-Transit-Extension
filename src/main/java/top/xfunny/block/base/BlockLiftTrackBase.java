@@ -15,7 +15,7 @@ import java.util.List;
 public abstract class BlockLiftTrackBase extends BlockExtension implements DirectionHelper {
 
     public BlockLiftTrackBase() {
-        super(BlockHelper.createBlockSettings(true));
+        super(BlockHelper.createBlockSettings(true,false));
     }
 
     protected static Direction getFacing(ItemPlacementContext context) {
