@@ -101,7 +101,7 @@ public class Blocks {
         PAT_P01_TICKET_BARRIER_ENTRANCE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "pat_p01_ticket_barrier_entrance"), () -> new Block(new PATTicketBarrier(true)), CreativeModeTabs.YTE_RAILWAY_FACILITIES);
         PAT_P01_TICKET_BARRIER_EXIT = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "pat_p01_ticket_barrier_exit"), () -> new Block(new PATTicketBarrier(false)), CreativeModeTabs.YTE_RAILWAY_FACILITIES);
         PAT_P01_TICKET_BARRIER_BARE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "pat_p01_ticket_barrier_bare"), () -> new Block(new PATTicketBarrierBareBlock(BlockHelper.createBlockSettings(false,false).strength(4.0f).nonOpaque())), CreativeModeTabs.YTE_RAILWAY_FACILITIES);
-        PAT_TM01_TICKET_MACHINE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "pat_tm01_ticket_machine"), () -> new Block(new BlockTicketMachine(BlockHelper.createBlockSettings(true, blockState -> 5))), CreativeModeTabs.YTE_RAILWAY_FACILITIES);
+        PAT_TM01_TICKET_MACHINE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "pat_tm01_ticket_machine"), () -> new Block(new BlockTicketMachine(BlockHelper.createBlockSettings(true, false, blockState -> 5))), CreativeModeTabs.YTE_RAILWAY_FACILITIES);
 
         LIFT_TRACK_EMPTY_FLOOR = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "lift_track_empty_floor"), () -> new Block(new EmptyFloor()));
 
